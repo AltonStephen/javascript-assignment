@@ -42,10 +42,12 @@ function playRound(playerSelection, computerSelection) {
     //loop
     function game() {
        
-     for (let i = 0; i <4; i++) { //what is going to be loop
-     let playerSelection = prompt("lets play rock papper scissors"); //define player, player input
-    
-    console.log ("you choose " +playerSelection.toLowerCase()); //show user input in lowercase
+     for (let i=0; i <5; i++) { //what is going to be loop
+        playerSelection = prompt("Chose either 'Scissor' or 'Paper' or 'Rock'")         //computerPlay();//"Rock";
+        alert("chosen");
+        playerSelection.toLowerCase();
+        console.log((i+1) + " " + playRound(playerSelection, computerSelection));
        
      }
     }
+game();
